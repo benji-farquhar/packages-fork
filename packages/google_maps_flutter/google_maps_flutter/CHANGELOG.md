@@ -1,3 +1,7 @@
+## 2.17.1
+
+* Adds support for `CameraUpdate.newLatLngBoundsWithEdgeInsets`.
+
 ## 2.17.0
 
 * Adds missing re-exports of classes related to advanced markers.
