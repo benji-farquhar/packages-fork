@@ -1358,6 +1358,7 @@ PlatformMapConfiguration _platformMapConfigurationFromMapConfiguration(
     myLocationEnabled: config.myLocationEnabled,
     myLocationButtonEnabled: config.myLocationButtonEnabled,
     padding: _platformEdgeInsetsFromEdgeInsets(config.padding),
+    lockCameraOnPaddingChange: config.lockCameraOnPaddingChange,
     indoorViewEnabled: config.indoorViewEnabled,
     trafficEnabled: config.trafficEnabled,
     buildingsEnabled: config.buildingsEnabled,

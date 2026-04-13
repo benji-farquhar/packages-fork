@@ -588,6 +588,7 @@ typedef NS_ENUM(NSUInteger, FGMPlatformMapBitmapScaling) {
     myLocationEnabled:(nullable NSNumber *)myLocationEnabled
     myLocationButtonEnabled:(nullable NSNumber *)myLocationButtonEnabled
     padding:(nullable FGMPlatformEdgeInsets *)padding
+    lockCameraOnPaddingChange:(nullable NSNumber *)lockCameraOnPaddingChange
     indoorViewEnabled:(nullable NSNumber *)indoorViewEnabled
     trafficEnabled:(nullable NSNumber *)trafficEnabled
     buildingsEnabled:(nullable NSNumber *)buildingsEnabled
@@ -606,6 +607,7 @@ typedef NS_ENUM(NSUInteger, FGMPlatformMapBitmapScaling) {
 @property(nonatomic, strong, nullable) NSNumber * myLocationEnabled;
 @property(nonatomic, strong, nullable) NSNumber * myLocationButtonEnabled;
 @property(nonatomic, strong, nullable) FGMPlatformEdgeInsets * padding;
+@property(nonatomic, strong, nullable) NSNumber * lockCameraOnPaddingChange;
 @property(nonatomic, strong, nullable) NSNumber * indoorViewEnabled;
 @property(nonatomic, strong, nullable) NSNumber * trafficEnabled;
 @property(nonatomic, strong, nullable) NSNumber * buildingsEnabled;

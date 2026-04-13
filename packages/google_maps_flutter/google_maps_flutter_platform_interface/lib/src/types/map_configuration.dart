@@ -34,6 +34,7 @@ class MapConfiguration {
     this.myLocationEnabled,
     this.myLocationButtonEnabled,
     this.padding,
+    this.lockCameraOnPaddingChange,
     this.indoorViewEnabled,
     this.trafficEnabled,
     this.buildingsEnabled,
@@ -117,7 +118,8 @@ class MapConfiguration {
   /// The padding for the map display.
   final EdgeInsets? padding;
 
-  /// True if indoor map views should be enabled.
+  final bool? lockCameraOnPaddingChange;
+
   final bool? indoorViewEnabled;
 
   /// True if the traffic overlay should be enabled.
@@ -221,6 +223,9 @@ class MapConfiguration {
           ? myLocationButtonEnabled
           : null,
       padding: padding != other.padding ? padding : null,
+      lockCameraOnPaddingChange: lockCameraOnPaddingChange != other.lockCameraOnPaddingChange
+          ? lockCameraOnPaddingChange
+          : null,
       indoorViewEnabled: indoorViewEnabled != other.indoorViewEnabled
           ? indoorViewEnabled
           : null,
@@ -266,6 +271,7 @@ class MapConfiguration {
       myLocationButtonEnabled:
           diff.myLocationButtonEnabled ?? myLocationButtonEnabled,
       padding: diff.padding ?? padding,
+      lockCameraOnPaddingChange: diff.lockCameraOnPaddingChange ?? lockCameraOnPaddingChange,
       indoorViewEnabled: diff.indoorViewEnabled ?? indoorViewEnabled,
       trafficEnabled: diff.trafficEnabled ?? trafficEnabled,
       buildingsEnabled: diff.buildingsEnabled ?? buildingsEnabled,
@@ -297,6 +303,7 @@ class MapConfiguration {
       myLocationEnabled == null &&
       myLocationButtonEnabled == null &&
       padding == null &&
+      lockCameraOnPaddingChange == null &&
       indoorViewEnabled == null &&
       trafficEnabled == null &&
       buildingsEnabled == null &&
@@ -333,6 +340,7 @@ class MapConfiguration {
         myLocationEnabled == other.myLocationEnabled &&
         myLocationButtonEnabled == other.myLocationButtonEnabled &&
         padding == other.padding &&
+        lockCameraOnPaddingChange == other.lockCameraOnPaddingChange &&
         indoorViewEnabled == other.indoorViewEnabled &&
         trafficEnabled == other.trafficEnabled &&
         buildingsEnabled == other.buildingsEnabled &&
@@ -363,6 +371,7 @@ class MapConfiguration {
     myLocationEnabled,
     myLocationButtonEnabled,
     padding,
+    lockCameraOnPaddingChange,
     indoorViewEnabled,
     trafficEnabled,
     buildingsEnabled,
